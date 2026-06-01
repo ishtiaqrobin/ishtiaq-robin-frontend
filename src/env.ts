@@ -9,9 +9,6 @@ export const env = createEnv({
   client: {
     NEXT_PUBLIC_API_URL: z.url(),
     NEXT_PUBLIC_AUTH_URL: z.url(),
-    // Frontend's own public URL — used so authClient sends requests
-    // to same-origin /api/auth/* which Next.js rewrites to the backend.
-    // This prevents cross-site cookie blocking.
     NEXT_PUBLIC_APP_URL: z.url(),
   },
   runtimeEnv: {
